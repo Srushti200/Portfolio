@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e0e;
+  color: #e5e5e5;
+}
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(145deg, #6f42c1, #4b0082);
+  color: white;
+}
+.hero img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid white;
+}
+.quote {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 1rem;
+  color: #ccccff;
+}
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  color: #b486f7;
+}
+ul.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+ul.skill-list li {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+ul.skill-list li:hover {
+  background-color: #b486f7;
+  color: #fff;
+}
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.project-card:hover {
+  transform: scale(1.03);
+}
+.project-card img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+a {
+  color: #b486f7;
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #b486f7;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #9b6ce0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(180, 134, 247, 0.1);
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #6f42c1 0%, transparent 70%);
+  opacity: 0.06;
+  z-index: -1;
+}
